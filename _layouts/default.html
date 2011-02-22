@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>zerofun :: {{ page.title }}</title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" media="all" href="/stylesheets/less.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+  </head>
+
+  <body lang="en">
+    <div id="header">
+      <h1><a href="/">zerofun</a></h1>
+      <div id="name_tag">Sam Mulube's website</div>
+    </div>
+    <div id="blog" class="content_block">
+      <h2>Blog</h2>
+      {{ content }}
+    </div>
+    <div id="about" class="content_block">
+      <h2>About me</h2>
+      <p>I work at <a href="http://www.connectedenvironments.com"
+        class="external">Connected Environments</a>, where we are hard at work
+      building <a href="http://www.pachube.com">Pachube</a>, and other cool stuff.</p>
+
+      <p>I'm married to Tara (who does a proper important job rather than the
+      hacking about I'm currently lucky enough to do), and have two sons, <a
+        href="http://twitter.com/whatzakisaid" class="external">Zaki</a> and <a
+        href="http://twitter.com/whatmikahsaid" class="external">Mikah</a>, who
+      are currently obsessed with fonts and Thomas the Tank
+      Engine respectively.</p>
+
+    </div>
+    <div id="twitter" class="content_block">
+      <h2>Twitter</h2>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 160,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#cccccc',
+      color: '#3c3c3c'
+    },
+    tweets: {
+      background: '#e8e8e8',
+      color: '#666666',
+      links: '#1a47b8'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('smazero').start();
+</script>
+    </div>
+    <div id="footer">
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+    <!--<script type="text/javascript" src="/javascripts/less-grid-4.js"></script>-->
+    <script type="text/javascript" src="/javascripts/application.js"></script>
+  </body>
+
+</html>
