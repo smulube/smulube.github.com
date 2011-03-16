@@ -3,3 +3,4 @@ server: true
 safe: true
 lsi: false
 pygments: true
+exclude: [Rakefile, Gemfile, Gemfile.lock, .gitignore]
